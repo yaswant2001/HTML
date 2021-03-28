@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<style type="text/css">
+		body,html{
+	height: 100%;
+	font-family: Verdana,sans-serif;
+
+}
+.box{
+	position: absolute;
+	top: 100px;
+	right: 20px;
+	left: 400px;
+	padding: 40px;
+	background-color: pink;
+	margin: 30px;
+	max-width: 400px; 
+	border-padding: 20px;
+}
+input[type=text],input[type=password]{
+	width: 100%;
+	margin: 10px 10px 50px 0px;
+	border: none;
+	background: #dbcd93;
+	padding: 10px;
+}
+.but{
+
+	padding: 16px 10px;
+	border: none;
+	cursor: pointer;
+	width: 100px;
+	margin: ;
+	opacity: 0.9;
+	position: relative;
+	color: white;
+	opacity: 0.9;
+	background-color: #bd3a09;
+}
+input[type=text]:focus,input[type=password]:focus{
+	background-color: #e8616a;
+	outline: none;
+}
+h1{
+	text-align: center;
+	color: green;
+	margin-top: 
+	padding:5px;
+}
+span{
+	font-size: 15px;
+	padding: 10px;
+	position: absolute;
+}
+.bg-img {
+  background-image: url("login1.jpg");
+  min-height: 750px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 0px;
+}
+	</style>
+	<script type="text/javascript">
+		function validateform()
+		{
+			var username=document.getElementByid('username').value;
+			var password=document.getElementByid('password').value;
+			if (Username=="admin" && password=="user") {
+				alert("login sucessful");
+				return false;
+			}
+			else
+			{
+				alert("login failed")
+
+			}
+			if (username==null || username=="") {
+				alert("username can't be blank.");
+				return false;
+                                                 
+			}
+			else if (password.length<6) {
+				alert("password must be at least 6 characters long.");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+<h1></h1>
+<div class="bg-img">
+	<form action="Login.javascript"  class="box" name="vldform">
+		<label for="username" id="username">username</label>
+		<input type="text" name="username" placeholder="username" required="username">
+
+		<label for="password" id="password">Password</label>
+		<input type="password" name="password" placeholder="password" required="password">
+
+		<button type="Login" class="but">Login</button>
+		<button type="sigup" class="but" onclick="validate()">sign up</button>
+		<span><a href="#">Forget password...!</a>
+		</span>
+			</form>
+		</div>
+</body>
+</html>
